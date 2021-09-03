@@ -1,0 +1,15 @@
+[package]
+name = "metacall-syn-wasm"
+version = "0.1.0"
+authors = ["Vicente Eduardo Ferrer Garcia <vic798@gmail.com>"]
+
+[dependencies]
+proc-macro2 = { version = "1.0", features = ["span-locations"] }
+
+[dependencies.syn]
+version = "1.0"
+default-features = false
+features = ["parsing", "full", "extra-traits"]
+
+[lib]
+crate-type = ["cdylib"]
